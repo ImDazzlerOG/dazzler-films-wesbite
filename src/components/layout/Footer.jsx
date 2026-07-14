@@ -42,7 +42,7 @@ function Footer() {
           <Link to="/">Home</Link>
           <Link to="/">Our Services</Link>
           <Link to="/">Behind Our Lens</Link>
-          <Link to="/about">About Us</Link>
+          <Link to="/about-us">About Us</Link>
 
         </div>
 
