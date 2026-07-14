@@ -120,9 +120,9 @@ function AboutUs() {
                   <FaMapMarkerAlt />
                 </div>
 
-                <h2>India</h2>
+                <h2>Mumbai, India</h2>
 
-                <span>Serving Nationwide</span>
+                <span>Serving Worldwide</span>
 
               </div>
 
