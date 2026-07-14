@@ -6,6 +6,7 @@ import Podcast from "./pages/Podcast";
 import Terms from "./pages/Terms";
 import Collaboration from "./pages/CollaborationGuidelines";
 import CursorGlow from "./components/ui/CursorGlow";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
 
       <CursorGlow />
 
+      <ScrollToTop />
+
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -22,7 +25,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
 
         <Route path="/podcast" element={<Podcast />} />
-        
+
         <Route path="/terms-and-conditions" element={<Terms />} />
 
         <Route path="/collaboration-guidelines" element={<Collaboration />} />

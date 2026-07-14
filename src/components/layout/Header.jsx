@@ -8,22 +8,34 @@ import { useEffect, useState } from "react";
 function Header() {
 
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
 
     const handleScroll = () => {
-
-      if (window.scrollY > 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-
+      setScrolled(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
+
+  }, []);
+
+  // Close mobile menu when screen becomes desktop
+  useEffect(() => {
+
+    const handleResize = () => {
+
+      if (window.innerWidth > 768) {
+        setMenuOpen(false);
+      }
+
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
 
   }, []);
 
@@ -33,13 +45,23 @@ function Header() {
 
       <div className="navbar">
 
-        <NavLink to="/" className="logo">
-
+        <NavLink
+          to="/"
+          className="logo"
+          onClick={() => setMenuOpen(false)}
+        >
           <img src={logo} alt="Dazzler Films" />
-
         </NavLink>
 
-        <nav>
+        {/* Hamburger Button */}
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <HiX /> : <HiOutlineMenuAlt3 />}
+        </button>
+
+        <nav className={menuOpen ? "active" : ""}>
 
           <ul className="menu">
 
@@ -47,10 +69,11 @@ function Header() {
 
               <li key={item.title}>
 
-                <NavLink to={item.path}>
-
+                <NavLink
+                  to={item.path}
+                  onClick={() => setMenuOpen(false)}
+                >
                   {item.title}
-
                 </NavLink>
 
               </li>
