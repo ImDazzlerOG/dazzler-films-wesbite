@@ -1,0 +1,508 @@
+/* ===========================================
+   OUR PORTFOLIO
+=========================================== */
+
+.portfolio-section{
+    background:linear-gradient(180deg,#ffffff 0%,#f7f9fc 100%);
+    padding:100px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.portfolio-container{
+    width:100%;
+    max-width:1700px;
+    margin:auto;
+    padding:0 35px;
+}
+
+/* ========================= */
+
+.portfolio-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+}
+
+.portfolio-heading h2{
+    font-size:58px;
+    color:#111;
+    font-weight:700;
+    margin-bottom:18px;
+    letter-spacing:-1px;
+}
+
+.portfolio-heading p{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* ========================= */
+
+.portfolio-swiper{
+    overflow:visible;
+    padding:15px 5px 70px;
+}
+
+/* ========================= */
+
+.portfolio-card{
+    background:#fff;
+    border-radius:26px;
+    overflow:hidden;
+    text-decoration:none;
+    display:block;
+    transition:.35s ease;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.15);
+}
+
+/* ========================= */
+
+.portfolio-image{
+    position:relative;
+    height:340px;
+    overflow:hidden;
+}
+
+.portfolio-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.7s ease;
+}
+
+.portfolio-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ========================= */
+
+.portfolio-image::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.70),
+        rgba(0,0,0,.15),
+        rgba(0,0,0,0)
+    );
+    z-index:1;
+}
+
+.portfolio-image h3{
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:25px;
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    z-index:2;
+    text-shadow:0 4px 12px rgba(0,0,0,.55);
+}
+
+/* ========================= */
+
+.portfolio-content{
+    background:#fff;
+    padding:24px 20px 28px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.portfolio-content h3{
+    font-size:23px;
+    color:#111;
+    font-weight:700;
+    margin-bottom:14px;
+    transition:.3s;
+    text-align:center;
+}
+
+.portfolio-card:hover .portfolio-content h3{
+    color:#0A84FF;
+}
+
+.portfolio-content span{
+    width:55px;
+    height:4px;
+    border-radius:20px;
+    background:#0A84FF;
+}
+
+/* ========================= */
+
+.portfolio-card,
+.portfolio-image img,
+.portfolio-content h3{
+    transition:all .35s ease;
+}
+/* ===========================================
+   SWIPER
+=========================================== */
+
+.portfolio-section .swiper{
+    width:100%;
+    overflow:visible;
+}
+
+.portfolio-section .swiper-wrapper{
+    align-items:stretch;
+}
+
+.portfolio-section .swiper-slide{
+    height:auto;
+    display:flex;
+}
+
+.portfolio-section .swiper-slide a{
+    width:100%;
+}
+
+/* ===========================================
+   PAGINATION
+=========================================== */
+
+.portfolio-section .swiper-pagination{
+    position:relative;
+    margin-top:45px;
+    bottom:0 !important;
+}
+
+.portfolio-section .swiper-pagination-bullet{
+    width:10px;
+    height:10px;
+    margin:0 6px !important;
+    background:#cfcfcf;
+    opacity:1;
+    transition:.3s ease;
+}
+
+.portfolio-section .swiper-pagination-bullet-active{
+    width:30px;
+    border-radius:30px;
+    background:#0A84FF;
+}
+
+/* ===========================================
+   REMOVE SWIPER ARROWS
+=========================================== */
+
+.swiper-button-prev,
+.swiper-button-next{
+    display:none !important;
+}
+
+/* ===========================================
+   CARD HOVER
+=========================================== */
+
+.portfolio-card:hover .portfolio-image::before{
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.58),
+        rgba(0,0,0,.08),
+        rgba(0,0,0,0)
+    );
+}
+
+.portfolio-card:hover .portfolio-content span{
+    width:80px;
+}
+
+/* ===========================================
+   DESKTOP
+=========================================== */
+
+@media (min-width:1500px){
+
+    .portfolio-container{
+        max-width:1800px;
+    }
+
+    .portfolio-heading h2{
+        font-size:62px;
+    }
+
+    .portfolio-image{
+        height:360px;
+    }
+
+}
+
+/* ===========================================
+   LAPTOP
+=========================================== */
+
+@media (max-width:1400px){
+
+    .portfolio-container{
+        max-width:1400px;
+    }
+
+    .portfolio-heading h2{
+        font-size:52px;
+    }
+
+    .portfolio-heading p{
+        font-size:17px;
+    }
+
+    .portfolio-image{
+        height:310px;
+    }
+
+    .portfolio-image h3{
+        font-size:24px;
+    }
+
+    .portfolio-content h3{
+        font-size:22px;
+    }
+
+}
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media (max-width:1024px){
+
+    .portfolio-section{
+        padding:80px 0;
+    }
+
+    .portfolio-container{
+        padding:0 20px;
+    }
+
+    .portfolio-heading{
+        margin-bottom:45px;
+    }
+
+    .portfolio-heading h2{
+        font-size:44px;
+    }
+
+    .portfolio-heading p{
+        font-size:16px;
+    }
+
+    .portfolio-image{
+        height:280px;
+    }
+
+    .portfolio-image h3{
+        font-size:22px;
+    }
+
+    .portfolio-content{
+        padding:22px 16px;
+    }
+
+    .portfolio-content h3{
+        font-size:20px;
+    }
+
+}
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width:768px){
+
+    .portfolio-section{
+        padding:70px 0;
+    }
+
+    .portfolio-container{
+        padding:0 18px;
+    }
+
+    .portfolio-heading{
+        margin-bottom:35px;
+    }
+
+    .portfolio-heading h2{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .portfolio-heading p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .portfolio-section .swiper{
+        overflow:visible;
+    }
+
+    .portfolio-image{
+        height:240px;
+    }
+
+    .portfolio-image h3{
+        font-size:20px;
+        bottom:18px;
+    }
+
+    .portfolio-content{
+        padding:18px;
+    }
+
+    .portfolio-content h3{
+        font-size:18px;
+        margin-bottom:12px;
+    }
+
+    .portfolio-content span{
+        width:45px;
+    }
+
+}
+
+/* ===========================================
+   SMALL MOBILE
+=========================================== */
+
+@media (max-width:480px){
+
+    .portfolio-heading h2{
+        font-size:30px;
+    }
+
+    .portfolio-heading p{
+        font-size:14px;
+    }
+
+    .portfolio-image{
+        height:210px;
+    }
+
+    .portfolio-image h3{
+        font-size:18px;
+    }
+
+    .portfolio-content h3{
+        font-size:17px;
+    }
+
+    .portfolio-content{
+        padding:16px;
+    }
+
+}
+
+/* ===========================================
+   PREMIUM EFFECTS
+=========================================== */
+
+.portfolio-card{
+    position:relative;
+}
+
+.portfolio-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:26px;
+
+    border:1px solid rgba(10,132,255,.08);
+
+    opacity:0;
+
+    transition:.35s;
+
+    pointer-events:none;
+
+}
+
+.portfolio-card:hover::after{
+
+    opacity:1;
+
+    border-color:#0A84FF;
+
+}
+
+.portfolio-card:hover{
+
+    box-shadow:
+        0 30px 80px rgba(10,132,255,.12),
+        0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* ===========================================
+   IMAGE ZOOM
+=========================================== */
+
+.portfolio-image img{
+
+    will-change:transform;
+
+    backface-visibility:hidden;
+
+}
+
+/* ===========================================
+   TEXT
+=========================================== */
+
+.portfolio-content h3{
+
+    letter-spacing:-0.3px;
+
+}
+
+/* ===========================================
+   CURSOR
+=========================================== */
+
+.portfolio-card{
+
+    cursor:pointer;
+
+}
+
+/* ===========================================
+   REMOVE SWIPER DEFAULT OUTLINE
+=========================================== */
+
+.swiper{
+    outline:none;
+}
+
+.swiper-slide{
+    outline:none;
+}
+
+/* ===========================================
+   SMOOTH
+=========================================== */
+
+.portfolio-card,
+.portfolio-image img,
+.portfolio-content h3,
+.portfolio-content span{
+
+    transition:all .35s ease;
+
+}

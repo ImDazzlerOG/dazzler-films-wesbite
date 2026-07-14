@@ -1,0 +1,94 @@
+.reviews-section{
+
+    background:#000000;
+
+    padding:60px 0;
+
+}
+
+.reviews-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+.reviews-heading{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.reviews-heading h2{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+}
+
+.reviews-heading p{
+
+    font-size:17px;
+
+    color:#ffffff;
+
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+    .reviews-section{
+
+        padding:70px 0;
+
+    }
+
+    .reviews-heading h2{
+
+        font-size:36px;
+
+    }
+
+    .reviews-heading p{
+
+        font-size:15px;
+
+    }
+
+}
+.reviews-section{
+
+    padding:50px 0;
+
+    background:#000000;
+
+}
+
+.reviews-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+.elfsight-app-f1e6542b-f543-47d2-8352-59253d820fe2{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+}

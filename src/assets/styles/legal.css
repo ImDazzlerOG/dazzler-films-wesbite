@@ -1,0 +1,345 @@
+/* ===========================================
+   LEGAL HERO
+=========================================== */
+
+.legal-hero{
+
+    padding:100px 20px 30px;
+
+    background:#000000;
+
+    text-align:center;
+
+}
+
+.legal-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+.legal-hero h1{
+
+    font-size:64px;
+
+    font-weight:800;
+
+    color:#fdfdfd;
+
+    margin-bottom:18px;
+
+}
+
+.legal-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    color:#0A84FF;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   CONTENT
+=========================================== */
+
+.legal-content{
+
+    background:#fff;
+
+    padding:20px 20px 120px;
+
+}
+
+.legal-card{
+
+    position:relative;
+
+    display:flex;
+
+    gap:50px;
+
+    padding:55px;
+
+    margin-bottom:35px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.legal-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(10,132,255,.12);
+
+}
+
+/* ===========================================
+   NUMBER
+=========================================== */
+
+.card-number{
+
+    font-size:90px;
+
+    font-weight:800;
+
+    color:#636363;
+
+    min-width:130px;
+
+    user-select:none;
+
+}
+
+.card-content{
+
+    flex:1;
+
+}
+
+.card-content h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:18px;
+
+}
+
+.card-line{
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:#0A84FF;
+
+    margin-bottom:25px;
+
+}
+
+.card-content p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+/* ===========================================
+   CONTACT SECTION
+=========================================== */
+
+.legal-contact{
+
+    margin-top:80px;
+
+    padding:70px 40px;
+
+    text-align:center;
+
+    background:#F8FAFC;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.legal-contact h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:20px;
+
+}
+
+.legal-contact p{
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.contact-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 36px;
+
+    background:#0A84FF;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:100px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(10,132,255,.25);
+
+}
+
+.contact-btn:hover{
+
+    background:#0874df;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 25px 50px rgba(10,132,255,.35);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .legal-hero{
+
+        padding:140px 20px 70px;
+
+    }
+
+    .legal-hero h1{
+
+        font-size:48px;
+
+    }
+
+    .legal-card{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:40px;
+
+    }
+
+    .card-number{
+
+        font-size:70px;
+
+        min-width:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .legal-hero h1{
+
+        font-size:36px;
+
+    }
+
+    .legal-hero p{
+
+        font-size:16px;
+
+    }
+
+    .legal-card{
+
+        padding:28px;
+
+        border-radius:20px;
+
+    }
+
+    .card-number{
+
+        font-size:54px;
+
+    }
+
+    .card-content h2{
+
+        font-size:24px;
+
+    }
+
+    .card-content p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .legal-contact{
+
+        padding:50px 25px;
+
+        border-radius:20px;
+
+    }
+
+    .legal-contact h2{
+
+        font-size:30px;
+
+    }
+
+    .legal-contact p{
+
+        font-size:16px;
+
+    }
+
+    .contact-btn{
+
+        width:100%;
+
+        padding:16px 20px;
+
+    }
+
+}

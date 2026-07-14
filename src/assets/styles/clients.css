@@ -1,0 +1,433 @@
+/* ===========================================
+   OUR CLIENTS
+=========================================== */
+
+.clients-section{
+
+    background:#ffffff;
+
+    padding:110px 0;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* ========================================= */
+
+.clients-container{
+
+    width:100%;
+
+    max-width:1700px;
+
+    margin:auto;
+
+    padding:0 30px;
+
+}
+
+/* ========================================= */
+
+.clients-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.clients-heading h2{
+
+    font-size:58px;
+
+    font-weight:700;
+
+    color:#111;
+
+    letter-spacing:-1px;
+
+}
+
+/* ========================================= */
+
+.clients-marquee{
+
+    position:relative;
+
+    width:100%;
+
+    overflow:hidden;
+
+    margin:28px 0;
+
+}
+
+/* ========================================= */
+
+.marquee-track{
+
+    display:flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    gap:15px;
+
+}
+
+/* Left Row */
+
+.marquee-left{
+
+    animation:scrollLeft 35s linear infinite;
+
+}
+
+/* Right Row */
+
+.marquee-right{
+
+    animation:scrollRight 35s linear infinite;
+
+}
+
+/* Pause on Hover */
+
+.clients-marquee:hover .marquee-track{
+
+    animation-play-state:paused;
+
+}
+
+/* ========================================= */
+
+.client-card{
+
+    width:auto;
+
+    min-width:220px;
+
+    height:110px;
+
+    padding:20px 30px;
+
+
+
+}
+
+/* ========================================= */
+
+.client-card img{
+
+    width:90%;
+
+    height:90%;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+
+    opacity:.8;
+
+    transition:.35s ease;
+}
+
+/* ========================================= */
+
+.client-card:hover{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(5);
+    
+
+}
+
+.client-card:hover img{
+
+    filter:grayscale(0%);
+    opacity:1;
+    transform:scale(2.5);
+
+}
+
+/* ========================================= */
+
+@keyframes scrollLeft{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+@keyframes scrollRight{
+
+    from{
+
+        transform:translateX(-50%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+/* ===========================================
+   FLOATING EFFECT
+=========================================== */
+
+.client-card{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.client-card:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.client-card:nth-child(3){
+
+    animation-delay:.8s;
+
+}
+
+.client-card:nth-child(4){
+
+    animation-delay:1.2s;
+
+}
+
+.client-card:nth-child(5){
+
+    animation-delay:1.6s;
+
+}
+
+.client-card:nth-child(6){
+
+    animation-delay:2s;
+
+}
+
+.client-card:nth-child(7){
+
+    animation-delay:2.4s;
+
+}
+
+.client-card:nth-child(8){
+
+    animation-delay:2.8s;
+
+}
+
+.client-card:nth-child(9){
+
+    animation-delay:3.2s;
+
+}
+
+.client-card:nth-child(10){
+
+    animation-delay:3.6s;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media(max-width:1024px){
+
+    .clients-section{
+
+        padding:90px 0;
+
+    }
+
+    .clients-heading{
+
+        margin-bottom:50px;
+
+    }
+
+    .clients-heading h2{
+
+        font-size:42px;
+
+    }
+
+    .client-card{
+
+        width:180px;
+
+        height:100px;
+
+        padding:20px;
+
+    }
+
+    .client-card img{
+
+        height:55px;
+
+    }
+
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+    .clients-section{
+
+        padding:70px 0;
+
+    }
+
+    .clients-container{
+
+        padding:0 15px;
+
+    }
+
+    .clients-heading{
+
+        margin-bottom:35px;
+
+    }
+
+    .clients-heading h2{
+
+        font-size:32px;
+
+    }
+
+    .clients-marquee{
+
+        margin:18px 0;
+
+    }
+
+    .marquee-track{
+
+        gap:18px;
+
+    }
+
+    .client-card{
+
+        width:150px;
+
+        height:85px;
+
+        border-radius:20px;
+
+        padding:16px;
+
+    }
+
+    .client-card img{
+
+        height:42px;
+
+    }
+
+}
+
+/* ===========================================
+   SMALL MOBILE
+=========================================== */
+
+@media(max-width:480px){
+
+    .clients-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .client-card{
+
+        width:130px;
+
+        height:75px;
+
+        padding:12px;
+
+    }
+
+    .client-card img{
+
+        height:35px;
+
+    }
+
+}
+
+/* ===========================================
+   PREMIUM POLISH
+=========================================== */
+
+.client-card::before{
+
+    display:none;
+
+}
+
+.client-card:hover::before{
+
+    display:block;
+
+}
+
+.client-card,
+.client-card img{
+
+    transition:all .35s ease;
+
+}

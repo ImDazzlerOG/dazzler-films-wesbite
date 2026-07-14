@@ -1,0 +1,58 @@
+.cursor-glow{
+
+    --x:50vw;
+    --y:50vh;
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+.cursor-glow::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    left:calc(var(--x) - 350px);
+    top:calc(var(--y) - 350px);
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(0,163,255,.22) 0%,
+
+        rgba(0,163,255,.10) 35%,
+
+        rgba(0,163,255,.04) 60%,
+
+        transparent 75%
+
+    );
+
+    filter:blur(60px);
+
+    transition:
+        left .05s linear,
+        top .05s linear;
+
+}
+
+@media(max-width:992px){
+
+    .cursor-glow{
+        display:none;
+    }
+
+}
