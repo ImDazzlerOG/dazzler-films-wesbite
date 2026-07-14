@@ -32,11 +32,11 @@ function Header() {
 
       <div className="navbar">
 
-        <div className="logo">
+        <NavLink to="/" className="logo">
 
           <img src={logo} alt="Dazzler Films" />
 
-        </div>
+        </NavLink>
 
         <nav>
 

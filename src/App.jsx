@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Podcast from "./pages/Podcast";
 import Terms from "./pages/Terms";
+import Collaboration from "./pages/CollaborationGuidelines";
 import CursorGlow from "./components/ui/CursorGlow";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/podcast" element={<Podcast />} />
         
         <Route path="/terms-and-conditions" element={<Terms />} />
+
+        <Route path="/collaboration-guidelines" element={<Collaboration />} />
 
       </Routes>
 

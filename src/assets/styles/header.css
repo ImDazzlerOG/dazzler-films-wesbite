@@ -72,6 +72,14 @@
 
     align-items:center;
 
+    text-decoration:none;
+
+}
+
+.logo:hover{
+
+    text-decoration:none;
+
 }
 
 .logo img{
