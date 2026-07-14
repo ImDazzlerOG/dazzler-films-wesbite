@@ -40,8 +40,8 @@ function Footer() {
           <h3>Quick Links</h3>
 
           <Link to="/">Home</Link>
-          <Link to="/">Our Services</Link>
-          <Link to="/">Behind Our Lens</Link>
+          <Link to="/">Our Portfolio</Link>
+          <Link to="/behind-our-lens">Behind Our Lens</Link>
           <Link to="/about">About Us</Link>
 
         </div>
