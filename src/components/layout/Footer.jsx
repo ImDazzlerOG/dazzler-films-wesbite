@@ -42,7 +42,7 @@ function Footer() {
           <Link to="/">Home</Link>
           <Link to="/">Our Services</Link>
           <Link to="/">Behind Our Lens</Link>
-          <Link to="/about-us">About Us</Link>
+          <Link to="/about">About Us</Link>
 
         </div>
 
@@ -52,39 +52,59 @@ function Footer() {
 
     <h3>Contact</h3>
 
-    <p>
-        <FaMapMarkerAlt className="contact-icon" />
-        Available Across India
-    </p>
+    <div className="footer-contact-item">
 
-    <p>
-        <FaEnvelope className="contact-icon" />
-        <a
-            href="mailto:businesswithdazzler@gmail.com"
-        >
+        <FaMapMarkerAlt className="footer-contact-icon" />
+
+        <div>
+
+            <strong>Mumbai, India</strong>
+
+            <small>Available for travel worldwide</small>
+
+        </div>
+
+    </div>
+
+    <div className="footer-contact-item">
+
+        <FaEnvelope className="footer-contact-icon" />
+
+        <a href="mailto:businesswithdazzler@gmail.com">
+
             businesswithdazzler@gmail.com
-        </a>
-    </p>
 
-    <p>
-        <FaWhatsapp className="whatsapp-icon" />
+        </a>
+
+    </div>
+
+    <div className="footer-contact-item">
+
+        <FaWhatsapp className="footer-whatsapp-icon" />
+
         <a
             href="https://wa.me/918827946769"
             target="_blank"
             rel="noreferrer"
         >
-            +91 88279 46769
-        </a>
-    </p>
 
-    <p>
-        <FaPhoneAlt className="contact-icon" />
-        <a
-            href="tel:+917028750343"
-        >
-            +91 70287 50343
+            +91 88279 46769
+
         </a>
-    </p>
+
+    </div>
+
+    <div className="footer-contact-item">
+
+        <FaPhoneAlt className="footer-contact-icon" />
+
+        <a href="tel:+917028750343">
+
+            +91 70287 50343
+
+        </a>
+
+    </div>
 
 </div>
 

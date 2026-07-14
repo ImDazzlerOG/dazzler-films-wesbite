@@ -7,6 +7,7 @@ import Terms from "./pages/Terms";
 import Collaboration from "./pages/CollaborationGuidelines";
 import CursorGlow from "./components/ui/CursorGlow";
 import ScrollToTop from "./components/ScrollToTop";
+import BehindOurLens from "./pages/BehindOurLens";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
 
         <Route path="/podcast" element={<Podcast />} />
+
+        <Route path="/behind-our-lens" element={<BehindOurLens />} />
 
         <Route path="/terms-and-conditions" element={<Terms />} />
 

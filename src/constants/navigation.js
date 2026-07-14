@@ -13,6 +13,6 @@ export const navigation = [
   },
   {
     title: "About Us",
-    path: "/aboutus",
+    path: "/about",
   },
 ];

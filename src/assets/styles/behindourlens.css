@@ -1,0 +1,190 @@
+/* =====================================================
+   BEHIND OUR LENS
+===================================================== */
+
+.lens-page{
+    background:#050505;
+    padding:130px 0 100px;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.lens-page::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    right:-250px;
+    top:-250px;
+    border-radius:50%;
+    background:rgba(10,132,255,.08);
+    filter:blur(160px);
+}
+
+.lens-page::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:-180px;
+    bottom:-180px;
+    border-radius:50%;
+    background:rgba(10,132,255,.06);
+    filter:blur(160px);
+}
+
+.lens-container{
+    width:min(1400px,92%);
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.lens-heading{
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 50px;
+}
+
+.lens-heading span{
+    color:#0A84FF;
+    letter-spacing:5px;
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.lens-heading h1{
+    color:#fff;
+    font-size:68px;
+    font-weight:700;
+    line-height:1.1;
+    margin:0;
+}
+
+.lens-heading p{
+    max-width:700px;
+    margin:20px auto 0;
+    color:#9b9b9b;
+    font-size:18px;
+    line-height:1.8;
+}
+.video-content{
+    padding:18px;
+    text-align:center;
+}
+
+.video-content h3{
+    color:#fff;
+    font-size:15px;
+    line-height:1.4;
+    margin:0;
+}
+/* =====================================================
+   FEATURED PLAYER
+===================================================== */
+
+.featured-video{
+    width:100%;
+    margin-bottom:70px;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 25px 70px rgba(0,0,0,.35);
+}
+
+.featured-video iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.video-card{
+    background:#101010;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+    position:relative;
+}
+
+.video-card:hover{
+    transform:translateY(-10px);
+    border-color:#0A84FF;
+    box-shadow:0 15px 45px rgba(10,132,255,.18);
+}
+
+.video-card.active{
+    border:2px solid #0A84FF;
+    box-shadow:0 0 35px rgba(10,132,255,.35);
+}
+
+.thumbnail{
+    position:relative;
+    overflow:hidden;
+}
+
+.thumbnail img{
+    width:100%;
+    display:block;
+    transition:.45s;
+}
+
+.video-card:hover .thumbnail img{
+    transform:scale(1.08);
+}
+
+.play-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.45);
+    opacity:0;
+    transition:.35s;
+}
+
+.video-card:hover .play-overlay{
+    opacity:1;
+}
+
+.play-overlay svg{
+    width:70px;
+    height:70px;
+    padding:20px;
+    border-radius:50%;
+    background:#0A84FF;
+    color:#fff;
+    transition:.35s;
+}
+
+.video-card:hover .play-overlay svg{
+    transform:scale(1.1);
+}
