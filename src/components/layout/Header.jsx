@@ -41,7 +41,7 @@ function Header() {
 
   return (
 
-    <header className={scrolled ? "header scrolled" : "header"}>
+    <header className={scrolled || window.location.pathname !== "/" ? "header scrolled" : "header"}>
 
       <div className="navbar">
 

@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import Podcast from "./pages/Podcast";
+import PortfolioPage from "./pages/PortfolioPage";
 import Terms from "./pages/Terms";
 import Collaboration from "./pages/CollaborationGuidelines";
 import CursorGlow from "./components/ui/CursorGlow";
@@ -25,7 +25,7 @@ function App() {
 
         <Route path="/about" element={<AboutUs />} />
 
-        <Route path="/podcast" element={<Podcast />} />
+        <Route path="/our-portfolio" element={<PortfolioPage />} />
 
         <Route path="/behind-our-lens" element={<BehindOurLens />} />
 
