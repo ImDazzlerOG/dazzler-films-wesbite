@@ -1,0 +1,200 @@
+/* ===========================================
+   HERO
+=========================================== */
+
+.music-hero{
+    position:relative;
+    padding:100px 10px 0px;
+    text-align:center;
+}
+
+.music-overlay{
+    max-width:800px;
+    margin:auto;
+}
+
+.music-overlay h1{
+    font-size:56px;
+    color:#fff;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.music-overlay p{
+    color:rgba(255,255,255,.7);
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===========================================
+   SECTION
+=========================================== */
+
+.music-section{
+    position:relative;
+    padding:40px 0 100px;
+}
+
+.music-player{
+    width:100%;
+    max-width:960px;
+    margin:0 auto 60px;
+    padding:0 20px;
+}
+
+.music-player iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:16px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+/* ===========================================
+   HEADING
+=========================================== */
+
+.music-heading{
+    text-align:center;
+    margin-bottom:30px;
+    padding:0 20px;
+}
+
+.music-heading h2{
+    color:#fff;
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.music-heading p{
+    color:rgba(255,255,255,.65);
+    font-size:17px;
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.music-grid{
+    max-width:1400px;
+    margin:auto;
+    padding:0 40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.music-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:16px;
+    cursor:pointer;
+    border:2px solid rgba(255,255,255,.08);
+    transition:.35s ease;
+    background:#111;
+}
+
+.music-card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+    transition:.45s ease;
+}
+
+.music-card:hover img{
+    transform:scale(1.08);
+}
+
+.music-card:hover{
+    border-color:#0A84FF;
+    box-shadow:0 0 30px rgba(10,132,255,.35);
+}
+
+/* ===========================================
+   ACTIVE VIDEO
+=========================================== */
+
+.music-card.active{
+    border:2px solid #0A84FF;
+    box-shadow:0 0 35px rgba(10,132,255,.45);
+}
+
+.music-card.active::after{
+    content:"NOW PLAYING";
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#0A84FF;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.music-overlay h1{
+    font-size:42px;
+}
+
+.music-player{
+    padding:0 25px;
+}
+
+.music-grid{
+    grid-template-columns:repeat(2,1fr);
+    padding:0 25px;
+}
+
+}
+
+@media(max-width:768px){
+
+.music-hero{
+    padding:120px 20px 50px;
+}
+
+.music-overlay h1{
+    font-size:34px;
+}
+
+.music-overlay p{
+    font-size:16px;
+}
+
+.music-player{
+    padding:0 15px;
+    margin-bottom:50px;
+}
+
+.music-heading h2{
+    font-size:28px;
+}
+
+.music-heading p{
+    font-size:15px;
+}
+
+.music-grid{
+    grid-template-columns:1fr;
+    padding:0 15px;
+    gap:20px;
+}
+
+.music-card.active::after{
+    font-size:10px;
+    padding:5px 10px;
+}
+
+}

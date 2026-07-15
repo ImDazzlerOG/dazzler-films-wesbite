@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import BehindOurLens from "./pages/BehindOurLens";
 import SocialMediaContent from "./pages/SocialMediaContent";
 import Podcast from "./pages/Podcast";
+import MusicVideo from "./pages/MusicVideo";
 function App() {
 
   return (
@@ -32,6 +33,8 @@ function App() {
         
         <Route path="/social-media-content" element={<SocialMediaContent />} />
         
+        <Route path="/music-video" element={<MusicVideo />} />
+
         <Route path="/podcast" element={<Podcast />} />
 
         <Route path="/terms-and-conditions" element={<Terms />} />
