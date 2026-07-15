@@ -1,0 +1,152 @@
+.home-contact {
+    padding: 80px 8%;
+    background: #050505;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-contact::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle,
+            rgba(0, 140, 255, 0.15),
+            transparent 70%);
+    top: -150px;
+    left: -200px;
+    pointer-events: none;
+}
+
+.home-contact .container {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-left .section-tag {
+    color: #1d8cff;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.contact-left h2 {
+    color: white;
+    font-size: 42px;
+    line-height: 1.05;
+    margin: 18px 0;
+    font-weight: 700;
+}
+
+.contact-left p {
+    color: #bdbdbd;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 430px;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 15px 18px;
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+    outline: none;
+}
+
+.contact-right textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: #1d8cff;
+    box-shadow: 0 0 18px rgba(29,140,255,.25);
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+    color: #8b8b8b;
+}
+
+.contact-right button {
+    width: fit-content;
+    padding: 14px 34px;
+    border: none;
+    border-radius: 50px;
+    background: #1d8cff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .35s;
+    box-shadow: 0 12px 35px rgba(29,140,255,.35);
+}
+
+.contact-right button:hover {
+    transform: translateY(-4px);
+    background: #0b78ea;
+}
+
+@media (max-width:992px){
+
+.home-contact .container{
+grid-template-columns:1fr;
+gap:60px;
+}
+
+.contact-left{
+text-align:center;
+}
+
+.contact-left p{
+margin:auto;
+}
+
+.contact-left h2{
+font-size:42px;
+}
+
+.contact-right button{
+width:100%;
+}
+
+}
+
+@media(max-width:576px){
+
+.home-contact{
+padding:90px 20px;
+}
+
+.contact-left h2{
+font-size:34px;
+}
+
+.contact-left p{
+font-size:16px;
+}
+
+.contact-right input,
+.contact-right textarea{
+padding:16px 18px;
+}
+
+}

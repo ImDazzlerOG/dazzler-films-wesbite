@@ -7,6 +7,7 @@ import Clients from "../components/Clients";
 import GoogleReviews from "../components/GoogleReviews";
 import Footer from "../components/layout/Footer";
 import { Helmet } from "react-helmet-async";
+import HomeContact from "../components/HomeContact";
 
 function Home() {
   return (
@@ -65,6 +66,7 @@ function Home() {
       <OurPortfolio />
       <Clients />
       <GoogleReviews />
+      <HomeContact />
       <Footer />
     </>
   );
