@@ -180,7 +180,7 @@ function AboutUs() {
 
             <p>
               Whether you're looking for video production,
-              photography, podcast production or creative marketing,
+              photography or creative production?
               we'd love to hear about your project.
             </p>
 
