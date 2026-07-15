@@ -185,7 +185,10 @@
     border-color:#00A3FF;
     transform:translateY(-5px);
 }
-
+.social-icons a:hover svg{
+    color: #fff !important;
+    fill: #fff !important;
+}
 /* =========================
    COPYRIGHT
 ========================= */
