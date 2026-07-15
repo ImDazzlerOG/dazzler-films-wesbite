@@ -1,0 +1,248 @@
+/* ==========================================
+   SOCIAL MEDIA CONTENT PAGE
+========================================== */
+
+.instagram-section{
+    position: relative;
+    overflow: hidden;
+    background: #050505;
+    padding: 40px 30px;
+}
+
+/* First Section Only */
+.first-section{
+    padding-top: 140px;
+}
+
+.instagram-section .cinematic-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ==========================================
+   PAGE HEADING
+========================================== */
+
+.social-heading{
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.social-heading span{
+    display: block;
+    color: #00A3FF;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.social-heading h2{
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.social-heading p{
+    color: #9d9d9d;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* ==========================================
+   SWIPER
+========================================== */
+
+.instagram-section .swiper{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.instagram-section .swiper-wrapper{
+    align-items: flex-start;
+}
+
+.instagram-section .swiper-slide{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.instagram-section .swiper-button-next,
+.instagram-section .swiper-button-prev{
+    color:#00A3FF;
+}
+
+.instagram-section .swiper-pagination{
+    position:relative;
+    bottom:0 !important;
+    margin-top:25px;
+}
+
+.instagram-section .swiper-pagination-bullet{
+    width:8px;
+    height:8px;
+    background:#666;
+    opacity:1;
+}
+
+.instagram-section .swiper-pagination-bullet-active{
+    background:#00A3FF;
+}
+
+/* ==========================================
+   INSTAGRAM EMBED
+========================================== */
+
+.instagram-card{
+    display:flex;
+    justify-content:center;
+}
+
+.instagram-card iframe,
+.instagram-card blockquote{
+    width:100% !important;
+    max-width:420px;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.content-divider{
+    width:100%;
+    max-width:1200px;
+    height:1px;
+    margin:20px auto;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,163,255,.25),
+        transparent
+    );
+}
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:992px){
+
+    .instagram-section{
+        padding:40px 20px;
+    }
+
+    .first-section{
+        padding-top:110px;
+    }
+
+    .social-heading{
+        margin-bottom:30px;
+    }
+
+    .social-heading span{
+        font-size:16px;
+        letter-spacing:4px;
+    }
+
+    .social-heading h2{
+        font-size:36px;
+    }
+
+    .social-heading p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .instagram-section .swiper{
+        padding-bottom:50px;
+    }
+
+    .content-divider{
+        margin:30px auto;
+    }
+
+}
+
+/* ==========================================
+   YOUTUBE SECTION
+========================================== */
+
+.youtube-section{
+    padding:40px 60px;
+    background:#050505;
+}
+
+.youtube-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+}
+
+.youtube-wrapper iframe{
+    width:360px;
+    height:640px;
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+
+@media (max-width:768px){
+
+    .youtube-section{
+        padding:40px 20px;
+    }
+
+    .youtube-wrapper iframe{
+        width:100%;
+        max-width:360px;
+        height:640px;
+    }
+
+}
+
+/* ==========================================
+   GRAPHIC DESIGN CARD
+========================================== */
+
+.graphic-card{
+    display:block;
+    overflow:hidden;
+    border-radius:18px;
+    cursor:pointer;
+    transition:.35s ease;
+}
+
+.graphic-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+    border-radius:18px;
+    transition:.35s ease;
+}
+
+.graphic-card:hover{
+    transform:translateY(-6px);
+}
+
+.graphic-card:hover img{
+    transform:scale(1.04);
+}

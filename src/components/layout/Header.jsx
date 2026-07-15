@@ -65,23 +65,48 @@ function Header() {
 
           <ul className="menu">
 
-            {navigation.map((item) => (
+  {navigation.map((item) => (
 
-              <li key={item.title}>
+    <li
+      key={item.title}
+      className={item.dropdown ? "has-dropdown" : ""}
+    >
 
-                <NavLink
-                  to={item.path}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.title}
-                </NavLink>
+      <NavLink
+        to={item.path}
+        onClick={() => setMenuOpen(false)}
+      >
+        {item.title}
+      </NavLink>
 
-              </li>
+      {item.dropdown && (
 
-            ))}
+        <ul className="dropdown-menu">
 
-          </ul>
+          {item.dropdown.map((sub) => (
 
+            <li key={sub.title}>
+
+              <NavLink
+                to={sub.path}
+                onClick={() => setMenuOpen(false)}
+              >
+                {sub.title}
+              </NavLink>
+
+            </li>
+
+          ))}
+
+        </ul>
+
+      )}
+
+    </li>
+
+  ))}
+
+</ul>
         </nav>
 
       </div>

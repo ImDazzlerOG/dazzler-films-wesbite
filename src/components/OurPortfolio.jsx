@@ -10,23 +10,23 @@ import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 
 // Images
-import portfolio from "../assets/images/our-portfolio/portfolio.jpg";
-import films from "../assets/images/our-portfolio/films-and-series.jpg";
-import music from "../assets/images/our-portfolio/Music-Video.jpg";
-import podcast from "../assets/images/our-portfolio/Podcast.jpg";
-import corporate from "../assets/images/our-portfolio/corporate.jpg";
-import events from "../assets/images/our-portfolio/Events.jpg";
-import industrial from "../assets/images/our-portfolio/Industrial.jpg";
-import live from "../assets/images/our-portfolio/Live-show.jpg";
-import product from "../assets/images/our-portfolio/Products.jpg";
-import social from "../assets/images/our-portfolio/Social-Media.jpg";
-import wedding from "../assets/images/our-portfolio/weddings.jpg";
+import portfolio from "../assets/images/our-portfolio/portfolio.webp";
+import films from "../assets/images/our-portfolio/films-and-series.webp";
+import music from "../assets/images/our-portfolio/Music-Video.webp";
+import podcast from "../assets/images/our-portfolio/Podcast.webp";
+import corporate from "../assets/images/our-portfolio/corporate.webp";
+import events from "../assets/images/our-portfolio/Events.webp";
+import industrial from "../assets/images/our-portfolio/Industrial.webp";
+import live from "../assets/images/our-portfolio/Live-show.webp";
+import product from "../assets/images/our-portfolio/Products.webp";
+import social from "../assets/images/our-portfolio/Social-Media.webp";
+import wedding from "../assets/images/our-portfolio/weddings.webp";
 
 const portfolioItems = [
   {
-    title: "Portfolio",
+    title: "Models & Portfolio",
     image: portfolio,
-    link: "/portfolio",
+    link: "/model-portfolio",
   },
   {
     title: "Films & Series",
@@ -69,9 +69,9 @@ const portfolioItems = [
     link: "/product-brand",
   },
   {
-    title: "Social Media",
+    title: "Social Media Content",
     image: social,
-    link: "/social-media",
+    link: "/social-media-content",
   },
   {
     title: "Wedding & Pre-Weddings",
