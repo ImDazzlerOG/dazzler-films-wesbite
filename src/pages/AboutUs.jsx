@@ -2,7 +2,7 @@ import "../assets/styles/aboutus.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import aboutImage from "../assets/images/about/about.jpg";
-
+import { Helmet } from "react-helmet-async";
 import {
   FaCalendarAlt,
   FaVideo,
@@ -14,11 +14,35 @@ import {
 
 import { useState } from "react";
 
+
+
 function AboutUs() {
 
     const [loading, setLoading] = useState(false);
   return (
     <>
+    <Helmet>
+
+  <title>About Us | Dazzler Films</title>
+
+  <meta
+    name="description"
+    content="Learn about Dazzler Films and Dazzler Collectix Media, founded by Deepesh Gajwa. Professional video production, photography, podcast production and creative media services."
+  />
+
+  <meta
+    name="keywords"
+    content="Dazzler Films, Video Production Mumbai, Deepesh Gajwa, Photography, Podcast Production"
+  />
+
+  <link
+    rel="canonical"
+    href="https://dazzlerfilms.in/about"
+  />
+
+</Helmet>
+
+<Header />
       <Header />
 
       {/* ================= ABOUT ================= */}
