@@ -17,7 +17,7 @@ import podcast from "../assets/images/our-portfolio/Podcast.webp";
 import corporate from "../assets/images/our-portfolio/corporate.webp";
 import events from "../assets/images/our-portfolio/Events.webp";
 import industrial from "../assets/images/our-portfolio/Industrial.webp";
-import live from "../assets/images/our-portfolio/Live-show.webp";
+import live from "../assets/images/our-portfolio/live-show.webp";
 import product from "../assets/images/our-portfolio/Products.webp";
 import social from "../assets/images/our-portfolio/Social-Media.webp";
 import wedding from "../assets/images/our-portfolio/weddings.webp";

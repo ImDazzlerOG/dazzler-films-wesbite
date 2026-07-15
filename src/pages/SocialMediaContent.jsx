@@ -11,7 +11,7 @@ import {
     graphicDesigns,
  } from "../data/socialMediaData";
 
-import "../assets/styles/socialMediaContent.css";
+import "../assets/styles/socialmediacontent.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
