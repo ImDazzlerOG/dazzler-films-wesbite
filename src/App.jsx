@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import PortfolioPage from "./pages/PortfolioPage";
+import PortfolioPage from "./pages/portfoliopage";
 import Terms from "./pages/Terms";
 import Collaboration from "./pages/CollaborationGuidelines";
 import CursorGlow from "./components/ui/CursorGlow";
