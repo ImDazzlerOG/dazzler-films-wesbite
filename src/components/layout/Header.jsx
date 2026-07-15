@@ -9,6 +9,7 @@ function Header() {
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
 
   useEffect(() => {
 
@@ -22,22 +23,25 @@ function Header() {
 
   }, []);
 
-  // Close mobile menu when screen becomes desktop
-  useEffect(() => {
+ // Close mobile menu when screen becomes desktop
+useEffect(() => {
 
-    const handleResize = () => {
+  const handleResize = () => {
 
-      if (window.innerWidth > 768) {
-        setMenuOpen(false);
-      }
+    if (window.innerWidth > 768) {
 
-    };
+      setMenuOpen(false);
+      setPortfolioOpen(false);
 
-    window.addEventListener("resize", handleResize);
+    }
 
-    return () => window.removeEventListener("resize", handleResize);
+  };
 
-  }, []);
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+
+}, []);
 
   return (
 
@@ -72,33 +76,78 @@ function Header() {
       className={item.dropdown ? "has-dropdown" : ""}
     >
 
-      <NavLink
-        to={item.path}
-        onClick={() => setMenuOpen(false)}
-      >
-        {item.title}
-      </NavLink>
+      {item.dropdown ? (
 
-      {item.dropdown && (
+        <>
 
-        <ul className="dropdown-menu">
+          <div
+            className="dropdown-toggle"
+            onClick={() => {
 
-          {item.dropdown.map((sub) => (
+              if (window.innerWidth <= 768) {
+                setPortfolioOpen(!portfolioOpen);
+              }
 
-            <li key={sub.title}>
+            }}
+          >
 
-              <NavLink
-                to={sub.path}
-                onClick={() => setMenuOpen(false)}
-              >
-                {sub.title}
-              </NavLink>
+            <NavLink
+              to={item.path}
+              onClick={(e) => {
 
-            </li>
+                if (window.innerWidth <= 768) {
+                  e.preventDefault();
+                } else {
+                  setMenuOpen(false);
+                }
 
-          ))}
+              }}
+            >
 
-        </ul>
+              {item.title}
+
+            </NavLink>
+
+          </div>
+
+          <ul className={`dropdown-menu ${portfolioOpen ? "mobile-open" : ""}`}>
+
+            {item.dropdown.map((sub) => (
+
+              <li key={sub.title}>
+
+                <NavLink
+                  to={sub.path}
+                  onClick={() => {
+
+                    setMenuOpen(false);
+                    setPortfolioOpen(false);
+
+                  }}
+                >
+
+                  {sub.title}
+
+                </NavLink>
+
+              </li>
+
+            ))}
+
+          </ul>
+
+        </>
+
+      ) : (
+
+        <NavLink
+          to={item.path}
+          onClick={() => setMenuOpen(false)}
+        >
+
+          {item.title}
+
+        </NavLink>
 
       )}
 
