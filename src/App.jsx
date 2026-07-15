@@ -9,6 +9,7 @@ import CursorGlow from "./components/ui/CursorGlow";
 import ScrollToTop from "./components/ScrollToTop";
 import BehindOurLens from "./pages/BehindOurLens";
 import SocialMediaContent from "./pages/SocialMediaContent";
+import Podcast from "./pages/Podcast";
 function App() {
 
   return (
@@ -31,6 +32,8 @@ function App() {
         
         <Route path="/social-media-content" element={<SocialMediaContent />} />
         
+        <Route path="/podcast" element={<Podcast />} />
+
         <Route path="/terms-and-conditions" element={<Terms />} />
 
         <Route path="/collaboration-guidelines" element={<Collaboration />} />
