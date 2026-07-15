@@ -3,6 +3,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import aboutImage from "../assets/images/about/about.jpg";
 import { Helmet } from "react-helmet-async";
+import CinematicBackground from "../components/CinematicBackground";
 import {
   FaCalendarAlt,
   FaVideo,
@@ -48,7 +49,7 @@ function AboutUs() {
       {/* ================= ABOUT ================= */}
 
       <section className="about-section">
-
+         <CinematicBackground />
         <div className="about-container">
 
           {/* LEFT */}

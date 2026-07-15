@@ -1,9 +1,10 @@
 import "../assets/styles/whatwedo.css";
+import CinematicBackground from "../components/CinematicBackground";
 
 function WhatWeDo() {
   return (
     <section className="whatwedo">
-
+      <CinematicBackground />
       <div className="section-heading">
 
         <span>WHAT WE DO</span>
@@ -21,7 +22,7 @@ function WhatWeDo() {
 
       <div className="services-grid">
 
-        {/* Card 1 */}
+        {/* VIDEO PRODUCTION */}
 
         <div className="service-card video">
 
@@ -32,16 +33,17 @@ function WhatWeDo() {
             <h3>Video Production</h3>
 
             <p>
-              End-to-end production including
-              shooting, editing, color grading,
-              podcasts, commercials and events.
+              Commercial Films, Brand Videos,
+              Podcasts, Interviews, Music Videos,
+              Event Coverage, Editing, Color Grading
+              & Complete Post Production.
             </p>
 
           </div>
 
         </div>
 
-        {/* Card 2 */}
+        {/* PHOTOGRAPHY */}
 
         <div className="service-card photo">
 
@@ -52,16 +54,16 @@ function WhatWeDo() {
             <h3>Photography</h3>
 
             <p>
-              Product, fashion, corporate,
-              event and lifestyle photography
-              tailored for every brand.
+              Fashion, Product, Corporate,
+              Lifestyle, Event and Commercial
+              Photography with a cinematic approach.
             </p>
 
           </div>
 
         </div>
 
-        {/* Card 3 */}
+        {/* PRODUCTION MANAGEMENT */}
 
         <div className="service-card production">
 
@@ -72,9 +74,10 @@ function WhatWeDo() {
             <h3>Production Management</h3>
 
             <p>
-              Planning, crew, equipment,
-              locations and complete
-              production execution.
+              Pre-Production Planning,
+              Crew Management, Equipment,
+              Location Coordination and
+              Complete Shoot Execution.
             </p>
 
           </div>
