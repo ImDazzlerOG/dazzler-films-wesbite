@@ -136,7 +136,7 @@ function Weddings() {
 <section className="wedding-gallery-section">
 
     <div className="social-heading">
-        <span>WEDDING PHOTOGRAPHY</span>
+        <span>WEDDING & PRE-WEDDING</span>
         <h2>Photo Gallery</h2>
     </div>
 
