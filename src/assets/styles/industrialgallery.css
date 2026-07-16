@@ -1,0 +1,86 @@
+/* ===========================================
+   INDUSTRIAL GALLERY
+=========================================== */
+
+.industrial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.industrial-card{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:18px;
+    background:#111;
+    cursor:pointer;
+    transition:all .35s ease;
+}
+
+.industrial-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+    transition:transform .6s ease;
+}
+
+/* Dark Overlay */
+
+.industrial-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.35),
+        rgba(0,0,0,0)
+    );
+    opacity:0;
+    transition:.35s;
+}
+
+/* Hover */
+
+.industrial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.45);
+}
+
+.industrial-card:hover img{
+    transform:scale(1.08);
+}
+
+.industrial-card:hover::after{
+    opacity:1;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .industrial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .industrial-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .industrial-card{
+        border-radius:14px;
+    }
+
+    .industrial-card img{
+        height:260px;
+    }
+
+}

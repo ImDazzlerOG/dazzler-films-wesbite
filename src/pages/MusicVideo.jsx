@@ -1,7 +1,7 @@
 import "../assets/styles/musicvideo.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import CinematicBG from "../components/CinematicBackground";
+
 import { Helmet } from "react-helmet-async";
 import { useState, useRef } from "react";
 import CinematicBackground from "../components/CinematicBackground";

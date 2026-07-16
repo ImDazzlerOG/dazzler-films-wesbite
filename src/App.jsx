@@ -14,7 +14,8 @@ import MusicVideo from "./pages/MusicVideo";
 import LiveShows from "./pages/LiveShows";
 import Corporate from "./pages/Corporate";
 import Weddings from "./pages/Weddings";
-
+import Industrial from "./pages/Industrial";
+import FilmsSeries from "./pages/FilmsSeries";
 
 function App() {
   return (
@@ -40,10 +41,14 @@ function App() {
         <Route path="/music-video" element={<MusicVideo />} />
         
         <Route path="/weddings" element={<Weddings />} />
+        
+        <Route path="/films-series" element={<FilmsSeries />} />
 
         <Route path="/live-shows" element={<LiveShows />} />
 
         <Route path="/podcast" element={<Podcast />} />
+
+        <Route path="/industrial" element={<Industrial />} />
 
         <Route path="/corporate" element={<Corporate />} />
 
