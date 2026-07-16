@@ -2,200 +2,226 @@
    HERO
 =========================================== */
 
-.corporate-hero{
-    position: relative;
-    padding: 100px 10px 0;
-    text-align: center;
+.live-hero{
+    position:relative;
+    padding:100px 20px 40px;
+    text-align:center;
 }
 
-.corporate-overlay{
-    max-width: 800px;
-    margin: auto;
+.live-overlay{
+    max-width:800px;
+    margin:auto;
 }
 
-.corporate-overlay h1{
-    font-size: 56px;
-    color: #fff;
-    margin-bottom: 18px;
-    font-weight: 700;
+.live-overlay h1{
+    font-size:56px;
+    color:#fff;
+    margin-bottom:18px;
+    font-weight:700;
 }
 
-.corporate-overlay p{
-    color: rgba(255,255,255,.7);
-    font-size: 18px;
-    line-height: 1.8;
+.live-overlay p{
+    color:rgba(255,255,255,.7);
+    font-size:18px;
+    line-height:1.8;
 }
 
 /* ===========================================
    SECTION
 =========================================== */
 
-.corporate-section{
-    position: relative;
-    padding: 40px 0 100px;
-}
-
-.corporate-player{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto 60px;
-    padding: 0 20px;
-}
-
-.corporate-player iframe{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.45);
-}
-
-/* ===========================================
-   HEADING
-=========================================== */
-
-.corporate-heading{
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 0 20px;
-}
-
-.corporate-heading h2{
-    color: #fff;
-    font-size: 38px;
-    margin-bottom: 12px;
-}
-
-.corporate-heading p{
-    color: rgba(255,255,255,.65);
-    font-size: 17px;
+.live-section{
+    position:relative;
+    padding:20px 0 100px;
 }
 
 /* ===========================================
    GRID
 =========================================== */
 
-.corporate-grid{
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 40px;
+.live-container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    padding:0 30px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:28px;
 }
 
 /* ===========================================
    CARD
 =========================================== */
 
-.corporate-card{
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
-    cursor: pointer;
-    border: 2px solid rgba(255,255,255,.08);
-    transition: .35s ease;
-    background: #111;
+.live-card{
+    width:100%;
+    cursor:pointer;
 }
 
-.corporate-card img{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
-    transition: .45s ease;
+.live-thumb{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    border-radius:18px;
+    background:#111;
+    border:2px solid rgba(255,255,255,.08);
+    transition:.35s ease;
 }
 
-.corporate-card:hover img{
-    transform: scale(1.08);
+.live-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.45s ease;
 }
 
-.corporate-card:hover{
-    border-color: #0A84FF;
-    box-shadow: 0 0 30px rgba(10,132,255,.35);
+.live-thumb:hover img{
+    transform:scale(1.08);
+}
+
+.live-thumb:hover{
+    border-color:#0A84FF;
+    box-shadow:0 0 35px rgba(10,132,255,.35);
 }
 
 /* ===========================================
-   ACTIVE VIDEO
+   PLAY BUTTON
 =========================================== */
 
-.corporate-card.active{
-    border: 2px solid #0A84FF;
-    box-shadow: 0 0 35px rgba(10,132,255,.45);
+.play-button{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.25);
+    opacity:0;
+    transition:.3s ease;
 }
 
-.corporate-card.active::after{
-    content: "NOW PLAYING";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #0A84FF;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.live-thumb:hover .play-button{
+    opacity:1;
+}
+
+.play-button svg{
+    width:70px;
+    height:70px;
+    color:#fff;
+    background:#0A84FF;
+    border-radius:50%;
+    padding:20px;
+    transition:.3s;
+}
+
+.live-thumb:hover .play-button svg{
+    transform:scale(1.1);
+}
+
+/* ===========================================
+   VIDEO MODAL
+=========================================== */
+
+.video-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.video-wrapper{
+    position:relative;
+    width:90%;
+    max-width:1200px;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 25px 80px rgba(0,0,0,.6);
+}
+
+.close-video{
+    position:absolute;
+    top:-55px;
+    right:0;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#0A84FF;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.close-video:hover{
+    transform:rotate(90deg);
 }
 
 /* ===========================================
    RESPONSIVE
 =========================================== */
 
-@media (max-width: 992px){
+@media(max-width:992px){
 
-    .corporate-overlay h1{
-        font-size: 42px;
-    }
+.live-overlay h1{
+    font-size:42px;
+}
 
-    .corporate-player{
-        padding: 0 25px;
-    }
-
-    .corporate-grid{
-        grid-template-columns: repeat(2,1fr);
-        padding: 0 25px;
-    }
+.live-container{
+    grid-template-columns:repeat(2,1fr);
+    padding:0 25px;
+}
 
 }
 
-@media (max-width: 768px){
+@media(max-width:768px){
 
-    .corporate-hero{
-        padding: 120px 20px 50px;
-    }
+.live-hero{
+    padding:120px 20px 40px;
+}
 
-    .corporate-overlay h1{
-        font-size: 34px;
-    }
+.live-overlay h1{
+    font-size:34px;
+}
 
-    .corporate-overlay p{
-        font-size: 16px;
-    }
+.live-overlay p{
+    font-size:16px;
+}
 
-    .corporate-player{
-        padding: 0 15px;
-        margin-bottom: 50px;
-    }
+.live-container{
+    grid-template-columns:1fr;
+    padding:0 15px;
+    gap:20px;
+}
 
-    .corporate-heading h2{
-        font-size: 28px;
-    }
+.play-button{
+    opacity:1;
+    background:rgba(0,0,0,.2);
+}
 
-    .corporate-heading p{
-        font-size: 15px;
-    }
+.play-button svg{
+    width:55px;
+    height:55px;
+    padding:16px;
+}
 
-    .corporate-grid{
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-        gap: 20px;
-    }
+.video-wrapper{
+    width:95%;
+}
 
-    .corporate-card.active::after{
-        font-size: 10px;
-        padding: 5px 10px;
-    }
+.close-video{
+    top:-45px;
+}
 
 }
