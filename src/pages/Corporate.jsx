@@ -2,7 +2,8 @@ import "../assets/styles/corporate.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Helmet } from "react-helmet-async";
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
 import CinematicBackground from "../components/CinematicBackground";
 
 const videos = [
@@ -21,17 +22,10 @@ const videos = [
 ];
 
 function Corporate() {
-  const [currentVideo, setCurrentVideo] = useState(videos[0]);
+  const [activeVideo, setActiveVideo] = useState(null);
 
-  const playerRef = useRef(null);
-
-  const playVideo = (video) => {
-    setCurrentVideo(video);
-
-    playerRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
+  const closePlayer = () => {
+    setActiveVideo(null);
   };
 
   return (
@@ -59,42 +53,56 @@ function Corporate() {
           <h1>Corporate Films</h1>
 
           <p>
-            Premium corporate films crafted to showcase your brand,
-            culture, products and vision through cinematic storytelling.
+            Premium corporate films crafted to showcase your brand, culture,
+            products and vision through cinematic storytelling.
           </p>
         </div>
       </section>
 
       <section className="corporate-section">
-        <div
-          className="corporate-player"
-          ref={playerRef}
-        >
-          <iframe
-            src={`https://www.youtube.com/embed/${currentVideo.id}?rel=0`}
-            title={currentVideo.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </div>
-
-        <div className="corporate-grid">
+        <div className="corporate-container">
           {videos.map((video) => (
             <div
               key={video.id}
-              className={`corporate-card ${
-                currentVideo.id === video.id ? "active" : ""
-              }`}
-              onClick={() => playVideo(video)}
+              className="corporate-card"
+              onClick={() => setActiveVideo(video.id)}
             >
-              <img
-                src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
-                alt={video.title}
-              />
+              <div className="corporate-thumb">
+                <img
+                  src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                  alt={video.title}
+                />
+              </div>
             </div>
           ))}
         </div>
       </section>
+
+      {activeVideo && (
+        <div
+          className="video-modal"
+          onClick={closePlayer}
+        >
+          <div
+            className="video-wrapper"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="close-video"
+              onClick={closePlayer}
+            >
+              <FaTimes />
+            </button>
+
+            <iframe
+              src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0`}
+              title="Corporate Film"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </>
