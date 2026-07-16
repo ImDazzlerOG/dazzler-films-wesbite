@@ -27,7 +27,7 @@ export const navigation = [
 
       {
         title: "Live Shows",
-        path: "/live-show",
+        path: "/live-shows",
       },
 
       {

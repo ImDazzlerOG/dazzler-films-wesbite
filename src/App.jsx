@@ -11,18 +11,19 @@ import BehindOurLens from "./pages/BehindOurLens";
 import SocialMediaContent from "./pages/SocialMediaContent";
 import Podcast from "./pages/Podcast";
 import MusicVideo from "./pages/MusicVideo";
+import LiveShows from "./pages/LiveShows";
+import Corporate from "./pages/Corporate";
+import Weddings from "./pages/Weddings";
+
+
 function App() {
-
   return (
-
     <>
-
       <CursorGlow />
 
       <ScrollToTop />
 
       <Routes>
-
         <Route path="/" element={<Home />} />
 
         <Route path="/about" element={<AboutUs />} />
@@ -30,23 +31,31 @@ function App() {
         <Route path="/our-portfolio" element={<PortfolioPage />} />
 
         <Route path="/behind-our-lens" element={<BehindOurLens />} />
-        
-        <Route path="/social-media-content" element={<SocialMediaContent />} />
-        
+
+        <Route
+          path="/social-media-content"
+          element={<SocialMediaContent />}
+        />
+
         <Route path="/music-video" element={<MusicVideo />} />
+        
+        <Route path="/weddings" element={<Weddings />} />
+
+        <Route path="/live-shows" element={<LiveShows />} />
 
         <Route path="/podcast" element={<Podcast />} />
 
+        <Route path="/corporate" element={<Corporate />} />
+
         <Route path="/terms-and-conditions" element={<Terms />} />
 
-        <Route path="/collaboration-guidelines" element={<Collaboration />} />
-
+        <Route
+          path="/collaboration-guidelines"
+          element={<Collaboration />}
+        />
       </Routes>
-
     </>
-
   );
-
 }
 
 export default App;

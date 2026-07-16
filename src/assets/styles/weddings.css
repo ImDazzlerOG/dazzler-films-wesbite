@@ -1,0 +1,245 @@
+/* ===========================================
+   HERO
+=========================================== */
+body{
+    background:red !important;
+}
+
+.wedding-hero{
+    position:relative;
+    padding:100px 20px 40px;
+    text-align:center;
+}
+
+.wedding-overlay{
+    max-width:800px;
+    margin:auto;
+}
+
+.wedding-overlay h1{
+    font-size:56px;
+    color:#fff;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.wedding-overlay p{
+    color:rgba(255,255,255,.7);
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===========================================
+   SECTION
+=========================================== */
+
+.wedding-section{
+    position:relative;
+    padding:20px 0 100px;
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.wedding-container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    padding:0 40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.wedding-card{
+    cursor:pointer;
+}
+
+.wedding-thumb{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    background:#111;
+    border:2px solid rgba(255,255,255,.08);
+    transition:.35s ease;
+}
+
+.wedding-thumb img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+    transition:.45s ease;
+}
+
+.wedding-thumb:hover img{
+    transform:scale(1.08);
+}
+
+.wedding-thumb:hover{
+    border-color:#0A84FF;
+    box-shadow:0 0 35px rgba(10,132,255,.35);
+}
+
+/* ===========================================
+   PLAY BUTTON
+=========================================== */
+
+.play-button{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.35);
+    opacity:0;
+    transition:.35s ease;
+}
+
+.wedding-thumb:hover .play-button{
+    opacity:1;
+}
+
+.play-button svg{
+    width:70px;
+    height:70px;
+    color:#fff;
+    background:#0A84FF;
+    padding:20px;
+    border-radius:50%;
+    transition:.3s ease;
+}
+
+.wedding-thumb:hover .play-button svg{
+    transform:scale(1.1);
+}
+
+/* ===========================================
+   VIDEO MODAL
+=========================================== */
+
+.video-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:fadeIn .3s ease;
+}
+
+.video-wrapper{
+    position:relative;
+    width:90%;
+    max-width:1200px;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 25px 80px rgba(0,0,0,.6);
+}
+
+.close-video{
+    position:absolute;
+    top:-50px;
+    right:0;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#0A84FF;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s ease;
+}
+
+.close-video:hover{
+    transform:rotate(90deg) scale(1.08);
+}
+
+/* ===========================================
+   ANIMATION
+=========================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.wedding-overlay h1{
+    font-size:42px;
+}
+
+.wedding-container{
+    grid-template-columns:repeat(2,1fr);
+    padding:0 25px;
+}
+
+}
+
+@media(max-width:768px){
+
+.wedding-hero{
+    padding:120px 20px 40px;
+}
+
+.wedding-overlay h1{
+    font-size:34px;
+}
+
+.wedding-overlay p{
+    font-size:16px;
+}
+
+.wedding-container{
+    grid-template-columns:1fr;
+    padding:0 15px;
+    gap:20px;
+}
+
+.play-button{
+    opacity:1;
+    background:rgba(0,0,0,.2);
+}
+
+.play-button svg{
+    width:55px;
+    height:55px;
+    padding:16px;
+}
+
+.video-wrapper{
+    width:95%;
+}
+
+.close-video{
+    top:-45px;
+    right:0;
+}
+
+}
