@@ -6,6 +6,16 @@ import { useState } from "react";
 import { FaPlay, FaTimes } from "react-icons/fa";
 import CinematicBackground from "../components/CinematicBackground";
 
+import WeddingPhotoCard from "../components/WeddingPhotoCard";
+import { weddingPhotos } from "../data/weddingData";
+import "../assets/styles/wedding-gallery.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 const videos = [
   {
     id: "Z6n0QlGzmNk",
@@ -123,6 +133,27 @@ function Weddings() {
           </div>
         </div>
       )}
+<section className="wedding-gallery-section">
+
+    <div className="social-heading">
+        <span>WEDDING PHOTOGRAPHY</span>
+        <h2>Photo Gallery</h2>
+    </div>
+
+    <div className="wedding-gallery">
+
+        {weddingPhotos.map((photo) => (
+
+            <WeddingPhotoCard
+                key={photo.id}
+                image={photo.image}
+            />
+
+        ))}
+
+    </div>
+
+</section>
 
       <Footer />
     </>

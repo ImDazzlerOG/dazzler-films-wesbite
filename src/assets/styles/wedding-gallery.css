@@ -1,0 +1,26 @@
+.wedding-gallery-section{
+    padding:80px 5%;
+}
+
+.wedding-gallery{
+    column-count:4;
+    column-gap:20px;
+}
+
+@media(max-width:1200px){
+    .wedding-gallery{
+        column-count:3;
+    }
+}
+
+@media(max-width:900px){
+    .wedding-gallery{
+        column-count:2;
+    }
+}
+
+@media(max-width:600px){
+    .wedding-gallery{
+        column-count:1;
+    }
+}
