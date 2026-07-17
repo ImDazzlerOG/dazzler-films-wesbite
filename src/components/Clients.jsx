@@ -10,6 +10,7 @@ import rahul from "../assets/images/our-clients/rahulplastics.png";
 import whiteDoor from "../assets/images/our-clients/thewhitedoor.png";
 import unerase from "../assets/images/our-clients/unerasepoetry.png";
 import fss from "../assets/images/our-clients/flying-squad-studios.png";
+
 function Clients() {
 
 const rowOne = [

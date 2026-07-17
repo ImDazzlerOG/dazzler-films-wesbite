@@ -16,6 +16,7 @@ import Corporate from "./pages/Corporate";
 import Weddings from "./pages/Weddings";
 import Industrial from "./pages/Industrial";
 import FilmsSeries from "./pages/FilmsSeries";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -33,10 +34,9 @@ function App() {
 
         <Route path="/behind-our-lens" element={<BehindOurLens />} />
 
-        <Route
-          path="/social-media-content"
-          element={<SocialMediaContent />}
-        />
+        <Route path="/social-media-content" element={<SocialMediaContent />} />
+
+        <Route path="/events" element={<Events />} />
 
         <Route path="/music-video" element={<MusicVideo />} />
         
