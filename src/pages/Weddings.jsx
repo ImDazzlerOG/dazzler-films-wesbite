@@ -76,7 +76,7 @@ function Weddings() {
 
       <section className="wedding-hero">
         <div className="wedding-overlay">
-          <h1>Wedding Films</h1>
+          <h1>Wedding & Pre-Wedding Cinematics</h1>
 
           <p>
             Timeless cinematic wedding films that preserve every emotion,

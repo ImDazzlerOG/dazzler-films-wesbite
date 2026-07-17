@@ -175,15 +175,7 @@
     opacity:1;
 }
 
-.play-overlay svg{
-    width:70px;
-    height:70px;
-    padding:20px;
-    border-radius:50%;
-    background:#0A84FF;
-    color:#fff;
-    transition:.35s;
-}
+
 
 .video-card:hover .play-overlay svg{
     transform:scale(1.1);
