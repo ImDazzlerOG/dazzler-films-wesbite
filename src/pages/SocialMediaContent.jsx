@@ -236,7 +236,7 @@ function SocialMediaContent() {
 
   <div className="social-heading">
 
-    <h2>influencer Content</h2>
+    <h2>Influencer Content</h2>
 
   
   </div>
