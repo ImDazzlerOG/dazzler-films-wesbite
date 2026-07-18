@@ -57,7 +57,7 @@ export const navigation = [
 
       {
         title: "Product & Brand",
-        path: "/product-brand",
+        path: "/products",
       },
 
       {

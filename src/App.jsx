@@ -18,6 +18,8 @@ import Industrial from "./pages/Industrial";
 import FilmsSeries from "./pages/FilmsSeries";
 import Events from "./pages/Events";
 import ModelPortfolio from "./pages/ModelPortfolio";
+import Products from "./pages/Products";
+
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
         <Route path="/corporate" element={<Corporate />} />
 
         <Route path="/terms-and-conditions" element={<Terms />} />
+
+        <Route path="/products" element={<Products />} />
 
         <Route path="/collaboration-guidelines" element={<Collaboration />} />
       </Routes>

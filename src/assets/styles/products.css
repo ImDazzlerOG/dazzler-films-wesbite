@@ -1,0 +1,224 @@
+/* ===========================================
+   HERO
+=========================================== */
+
+.products-hero {
+    min-height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px 40px;
+}
+
+.products-overlay {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.products-overlay h1 {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.products-overlay p {
+    color: rgba(255,255,255,.75);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ===========================================
+   SECTION
+=========================================== */
+
+.products-section {
+    padding: 20px 0 70px;
+}
+
+
+/* ===========================================
+   YOUTUBE VIDEOS
+=========================================== */
+
+.products-container {
+
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 0 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0,1fr));
+
+    gap: 35px;
+
+}
+
+.products-card {
+
+    width: 100%;
+
+    cursor: pointer;
+
+}
+
+.products-thumb {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16/9;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: #111;
+
+    transition: .35s;
+
+}
+
+.products-thumb img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .45s;
+
+}
+
+.products-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+.products-thumb:hover {
+
+    border-color: #0A84FF;
+
+    box-shadow: 0 0 35px rgba(10,132,255,.35);
+
+}
+
+
+/* ===========================================
+   GALLERY TITLE
+=========================================== */
+
+.gallery-title {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+.gallery-title h2 {
+
+    color: #fff;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+}
+
+
+/* ===========================================
+   DIVIDER
+=========================================== */
+
+.content-divider {
+
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    margin: 20px auto;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,163,255,.25),
+        transparent
+    );
+
+}
+
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media (max-width: 992px) {
+
+    .products-container {
+
+        grid-template-columns: repeat(2, minmax(0,1fr));
+
+        padding: 0 30px;
+
+    }
+
+    .products-overlay h1 {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .products-hero {
+
+        padding: 90px 20px 40px;
+
+    }
+
+    .products-overlay h1 {
+
+        font-size: 34px;
+
+    }
+
+    .products-overlay p {
+
+        font-size: 16px;
+
+    }
+
+    .products-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 0 20px;
+
+        gap: 25px;
+
+    }
+
+    .gallery-title h2 {
+
+        font-size: 30px;
+
+    }
+
+}
