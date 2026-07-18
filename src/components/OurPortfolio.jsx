@@ -24,9 +24,9 @@ import wedding from "../assets/images/our-portfolio/weddings.webp";
 
 const portfolioItems = [
   {
-    title: "Models & Portfolio",
+    title: "Fashion",
     image: portfolio,
-    link: "/model-portfolio",
+    link: "/fashion",
   },
   {
     title: "Films & Series",

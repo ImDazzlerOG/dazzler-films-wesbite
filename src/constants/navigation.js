@@ -22,7 +22,7 @@ export const navigation = [
 
       {
         title: "Fashion",
-        path: "/model-portfolio",
+        path: "/fashion",
       },
 
       {

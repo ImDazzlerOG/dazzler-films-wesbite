@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { FaPlay, FaTimes } from "react-icons/fa";
 
-import "../assets/styles/modelportfolio.css";
+import "../assets/styles/fashion.css";
 
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -14,7 +14,7 @@ import {
   galleryImages,
 } from "../data/modelPortfolioData";
 
-function ModelPortfolio() {
+function Fashion() {
   const [activeVideo, setActiveVideo] = useState(null);
 
   const closePlayer = () => {
@@ -24,7 +24,7 @@ function ModelPortfolio() {
   return (
     <>
       <Helmet>
-        <title>Model & Portfolio | Dazzler Films</title>
+        <title>Fashion | Dazzler Films</title>
 
         <meta
           name="description"
@@ -33,7 +33,7 @@ function ModelPortfolio() {
 
         <link
           rel="canonical"
-          href="https://dazzlerfilms.in/model-portfolio"
+          href="https://dazzlerfilms.in/fashion"
         />
       </Helmet>
 
@@ -128,4 +128,4 @@ function ModelPortfolio() {
   );
 }
 
-export default ModelPortfolio;
+export default Fashion;

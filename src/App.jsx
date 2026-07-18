@@ -17,7 +17,7 @@ import Weddings from "./pages/Weddings";
 import Industrial from "./pages/Industrial";
 import FilmsSeries from "./pages/FilmsSeries";
 import Events from "./pages/Events";
-import ModelPortfolio from "./pages/ModelPortfolio";
+import Fashion from "./pages/Fashion";
 import Products from "./pages/Products";
 
 
@@ -53,7 +53,7 @@ function App() {
 
         <Route path="/industrial" element={<Industrial />} />
         
-        <Route path="/model-portfolio" element={<ModelPortfolio />} />
+        <Route path="/fashion" element={<Fashion />} />
 
         <Route path="/corporate" element={<Corporate />} />
 
