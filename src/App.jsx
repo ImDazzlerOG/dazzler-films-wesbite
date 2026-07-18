@@ -17,6 +17,7 @@ import Weddings from "./pages/Weddings";
 import Industrial from "./pages/Industrial";
 import FilmsSeries from "./pages/FilmsSeries";
 import Events from "./pages/Events";
+import ModelPortfolio from "./pages/ModelPortfolio";
 
 function App() {
   return (
@@ -49,15 +50,14 @@ function App() {
         <Route path="/podcast" element={<Podcast />} />
 
         <Route path="/industrial" element={<Industrial />} />
+        
+        <Route path="/model-portfolio" element={<ModelPortfolio />} />
 
         <Route path="/corporate" element={<Corporate />} />
 
         <Route path="/terms-and-conditions" element={<Terms />} />
 
-        <Route
-          path="/collaboration-guidelines"
-          element={<Collaboration />}
-        />
+        <Route path="/collaboration-guidelines" element={<Collaboration />} />
       </Routes>
     </>
   );

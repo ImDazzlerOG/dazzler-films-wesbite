@@ -1,0 +1,230 @@
+/* ===========================================
+   HERO
+=========================================== */
+
+.models-hero {
+    min-height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px 40px;
+}
+
+.models-overlay {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.models-overlay h1 {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.models-overlay p {
+    color: rgba(255, 255, 255, .75);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ===========================================
+   SECTION
+=========================================== */
+
+.models-section {
+    padding: 20px 0 70px;
+}
+
+
+/* ===========================================
+   YOUTUBE SHORTS GRID
+=========================================== */
+
+.models-container {
+
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 60px;
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 25px;
+
+}
+
+.models-card {
+    width: 100%;
+    cursor: pointer;
+}
+
+.models-thumb {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background: #111;
+
+    transition: .35s;
+
+}
+
+.models-thumb img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .45s;
+
+}
+
+.models-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+.models-thumb:hover {
+
+    border-color: #0A84FF;
+
+    box-shadow: 0 0 35px rgba(10, 132, 255, .35);
+
+}
+
+
+/* ===========================================
+   GALLERY TITLE
+=========================================== */
+
+.gallery-title {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+.gallery-title h2 {
+
+    color: #fff;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+}
+
+
+/* ===========================================
+   DIVIDER
+=========================================== */
+
+.content-divider {
+
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    margin: 20px auto;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,163,255,.25),
+        transparent
+    );
+
+}
+
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media (max-width: 992px) {
+
+    .models-container {
+
+        grid-template-columns: repeat(4, minmax(0,1fr));
+
+        padding: 0 30px;
+
+    }
+
+    .models-overlay h1 {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .models-hero {
+
+        padding: 90px 20px 40px;
+
+    }
+
+    .models-overlay h1 {
+
+        font-size: 34px;
+
+    }
+
+    .models-overlay p {
+
+        font-size: 16px;
+
+    }
+
+    .models-container {
+
+        grid-template-columns: repeat(4, minmax(0,1fr));
+
+        padding: 0 20px;
+
+        gap: 20px;
+
+    }
+
+    .gallery-title h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .models-container {
+
+        grid-template-columns: repeat(4, minmax(0,1fr));
+
+        gap: 15px;
+
+    }
+
+}
