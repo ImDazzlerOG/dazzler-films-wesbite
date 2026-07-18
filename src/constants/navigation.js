@@ -21,7 +21,7 @@ export const navigation = [
       },
 
       {
-        title: "Model & Portfolio",
+        title: "Fashion",
         path: "/model-portfolio",
       },
 
