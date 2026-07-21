@@ -19,7 +19,7 @@ import FilmsSeries from "./pages/FilmsSeries";
 import Events from "./pages/Events";
 import Fashion from "./pages/Fashion";
 import Products from "./pages/Products";
-
+import OnSetDocumentation from "./pages/OnSetDocumentation";
 
 function App() {
   return (
@@ -43,6 +43,8 @@ function App() {
 
         <Route path="/music-video" element={<MusicVideo />} />
         
+        <Route path="/on-set-documentation" element={<OnSetDocumentation />} />
+
         <Route path="/weddings" element={<Weddings />} />
         
         <Route path="/films-series" element={<FilmsSeries />} />

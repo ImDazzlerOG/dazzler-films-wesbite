@@ -46,6 +46,11 @@ export const navigation = [
       },
 
       {
+      title: "On Set Documentation (BTS)",
+      path: "/on-set-documentation",
+      },
+
+      {
         title: "Events",
         path: "/events",
       },
