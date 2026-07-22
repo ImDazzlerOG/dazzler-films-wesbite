@@ -17,7 +17,7 @@ import reelThumb from "../assets/images/onset/reel-thumbnail.webp";
 
 export const instagramReel = 
 {
-  title: "Featured BTS Reel",
+  title: "Karunesh Talwar BTS Reel",
 
   thumbnail: reelThumb,
 
