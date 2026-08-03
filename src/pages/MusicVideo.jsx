@@ -8,6 +8,10 @@ import CinematicBackground from "../components/CinematicBackground";
 
 const videos = [
   {
+    id: "HSc145JYnhQ",
+    title: "Music Video 04",
+  },
+  {
     id: "spPvoRKQyy8",
     title: "Music Video 01",
   },
@@ -19,6 +23,7 @@ const videos = [
     id: "-sAzCzH0Kmg",
     title: "Music Video 03",
   },
+  
   
 ];
 
