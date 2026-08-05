@@ -30,6 +30,18 @@ const videos = [
     id: "YcERHHHYUy4",
     title: "BTS Of Model Shoot",
   },
+  {
+    id: "C6dNF2MUXkI",
+    title: "I Suggested this Movie to Faridoon Sir",
+  },
+  {
+    id: "Kzq1LA4e5Fc",
+    title: "Bro Stole The Spotlight",
+  },
+  {
+    id: "AI1usiQ6u_0",
+    title: "My Intro",
+  },
 ];
 
 function BehindOurLens() {
