@@ -66,7 +66,7 @@ const portfolioItems = [
   {
     title: "Product & Brand",
     image: product,
-    link: "/product-brand",
+    link: "/products",
   },
   {
     title: "Social Media Content",
