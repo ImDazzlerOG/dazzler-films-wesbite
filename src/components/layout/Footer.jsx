@@ -147,7 +147,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://facebook.com/dazzlerfilms"
+              href="https://www.facebook.com/dazzlerfilmsin/"
               target="_blank"
               rel="noreferrer"
             >
